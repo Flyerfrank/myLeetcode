@@ -1,8 +1,5 @@
 package com.frank.leetcode.basicArithmetic.array;
 
-import java.awt.*;
-
-import static jdk.nashorn.internal.objects.NativeArray.reverse;
 
 /**
  * @Author zyf
@@ -32,17 +29,27 @@ import static jdk.nashorn.internal.objects.NativeArray.reverse;
  */
 public class ReverseArray {
     public static void main(String[] args) {
-        int[] reverse = {1,2,3,4,5,6,7};
+        int[] nums = {1,2,3,4,5,6,7};
         int k = 3;
-        reverseArray(reverse,k);
+        reverseArray(nums,k);
     }
 
-    private static void reverseArray(int[] reverse,int k) {
-        for (int i = 0; i < k; i++) {
-//            int tem =
+    private static void reverseArray(int[] nums,int k) {
+        for (int j = 0; j < k; j++) {
+            for (int i = nums.length-1; i > 0; i--) {
+                int tem = nums[i];
+                nums[i] = nums[i-1];
+                nums[i-1] = tem;
+            }
         }
-        for (int i = 0; i < reverse.length; i++) {
-            System.out.println("reverse = " + reverse[i]);
+
+        for (int j = 0; j < k; j++) {
+            int tem = nums[j+k];
+            nums[j+k] = nums[j];
+
+        }
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println("reverse = " + nums[i]);
 
         }
     }
