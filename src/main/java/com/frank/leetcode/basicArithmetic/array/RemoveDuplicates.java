@@ -1,10 +1,10 @@
 package com.frank.leetcode.basicArithmetic.array;
 
 /**
- * Created  zyf in 2019/9/27 15:53
+ * Created  frank in 2019/9/27 15:53
  * 从排序数组中删除重复项
  */
-public class Array {
+public class RemoveDuplicates {
 
     public static void main(String[] args) {
 

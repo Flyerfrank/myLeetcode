@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author zyf
+ * @Author frank
  * @Date 2019/10/22 11:38
  * 买卖股票的最佳时机 II
  *

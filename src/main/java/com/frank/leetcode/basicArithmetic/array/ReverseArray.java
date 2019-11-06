@@ -2,7 +2,7 @@ package com.frank.leetcode.basicArithmetic.array;
 
 
 /**
- * @Author zyf
+ * @Author frank
  * @Date 2019/10/23 10:04
  *
  * 给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。
@@ -43,14 +43,8 @@ public class ReverseArray {
             }
         }
 
-        for (int j = 0; j < k; j++) {
-            int tem = nums[j+k];
-            nums[j+k] = nums[j];
-
-        }
         for (int i = 0; i < nums.length; i++) {
             System.out.println("reverse = " + nums[i]);
-
         }
     }
 }
