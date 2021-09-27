@@ -1,5 +1,8 @@
 package com.frank.leetcode.basicArithmetic.array;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author ：zyf
  * @date ：2019/11/13 18:59
@@ -34,6 +37,11 @@ public class TowArrayIntersect {
 
     }
     public static int[] intersect(int[] nums1, int[] nums2) {
+        List<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < nums1.length; i++) {
+
+        }
+
 
         return nums1;
     }
